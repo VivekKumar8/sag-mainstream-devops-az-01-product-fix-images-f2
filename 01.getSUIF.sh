@@ -26,8 +26,11 @@ if [ ! -f "${SUIF_CACHE_HOME}/01.scripts/installation/setupFunctions.sh" ]; then
   ls -l "${SUIF_CACHE_HOME}/01.scripts/"
   ls -l "${SUIF_CACHE_HOME}/01.scripts/installation"
   exit 3
+else
+  logI "File ${SUIF_CACHE_HOME}/01.scripts/installation/setupFunctions.sh present. Dumping..."
+  cat "${SUIF_CACHE_HOME}/01.scripts/installation/setupFunctions.sh"
 fi
 
 chmod u+x "${SUIF_CACHE_HOME}/01.scripts/installation/setupFunctions.sh"
 
-huntForSuifFile "01.scripts\pwsh" "generateInventoryFileFromInstallScript.ps1" || exit 4
+huntForSuifFile "01.scripts/pwsh" "generateInventoryFileFromInstallScript.ps1" || exit 4

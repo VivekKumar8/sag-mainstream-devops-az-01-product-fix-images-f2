@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 # We plan to execute manually for tutorial purposes
 # This particular pipeline should not be run behind GitHub events such as push or PR
 trigger: none

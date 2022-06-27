@@ -19,4 +19,4 @@ fi
 
 . "${SUIF_CACHE_HOME}/01.scripts/commonFunctions.sh"
 
-huntForSuifFile "/01.scripts/installation" "setupFunctions.sh" || exit 2
+huntForSuifFile "01.scripts/installation" "setupFunctions.sh" || exit 2
